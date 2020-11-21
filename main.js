@@ -34,11 +34,11 @@ const budget = {
         },
     ]
 };
-
+// changed i++
 function generateTable(b) {
     const p = document.getElementById('list');
     p.innerHTML = '';
-    for (var i = 0; i < b.length; i++) {
+    for (var i = 0; i < b.length; i += 1) {
         const div = document.createElement('div');
         div.innerHTML = `${b[i].title} - ${b[i].budget}`;
         p.appendChild(div);
